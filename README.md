@@ -1,4 +1,4 @@
-# ** Welcome to cloud-native-resource-monitor👋**
+<h1 align="center">Welcome to cloud-native-resource-monitor👋</h1>
 
 # 📝 Overview
 <p align="center">
@@ -10,6 +10,7 @@ Welcome to the complete Cloud Native Resource Monitoring application. This Pytho
 ## 🚀 Prerequisites
 - Flask >= 2.2.3
 - psutil >= 5.8.0
+- kubectl >= 1.28
 - plotly >= 5.5.0
 - boto3 >= 1.9.148
 - kubernetes >= 10.0.1
