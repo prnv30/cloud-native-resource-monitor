@@ -1,6 +1,10 @@
-# **Cloud Native Resource Monitor Application Built with Flask and Docker on EKS**
+# ** Welcome to cloud-native-resource-monitor👋**
 
 # About
+<p align="center">
+  <a href="" rel="noopener">
+ <img src="demo.png"></a>
+</p>
 Welcome to the complete Cloud Native Resource Monitoring application. This Python application built with Flask can monitor the CPU and Memory utilization in real time. This project embraces containerisation using Docker and orchestration using Kubernetes ensuring ease of deployment and scalability.
 
 ## Prerequisites
@@ -10,7 +14,7 @@ Welcome to the complete Cloud Native Resource Monitoring application. This Pytho
 - boto3 >= 1.9.148
 - kubernetes >= 10.0.1
 
-# Getting Started
+# 👨🏽‍💻 Getting Started
 Follow these steps to set up and deploy the Real-Time Cloud Native Resource Monitoring application
 
 ## Part 1: Creating and Deploying the Flask application locally
@@ -30,7 +34,8 @@ To containerize the Flask application, you need to create a Dockerfile. A Docker
 
 ### Step 1: Create a **`Dockerfile`** in the root directory of the project
 A Dockerfile is simply a text-based file with no file extension that contains a script of instructions. Docker uses this script to build a container image. Refer the Docker documentation to create a docker file as per your own requirements. Here's a sample Dockerfile:
-```
+
+```docker
 # Use an official Node.js runtime as a base image
 FROM python:3.9-slim-buster
 
@@ -74,8 +79,9 @@ Amazon Elastic Container Registry (Amazon ECR) is an AWS managed container image
 
 ### **Step 1: Create an ECR repository using Boto3**
 
-Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2. Start by creating a file named 'ecr.py' in your root directory with the following specification:
-```
+Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2. Start by creating a file named `ecr.py` in your root directory with the following specification:
+
+```python
 import boto3
 
 # Create an ECR client
@@ -111,8 +117,8 @@ aws eks update-kubeconfig --region region-code --name my-cluster
 ```
 
 ### **Step 2: Create deployment and service**
-To create a deployment, you need to have kubectl installed and configured. Start by creating a file named 'eks.py' in your root directory with the following specification:
-```jsx
+To create a deployment, you need to have kubectl installed and configured. Start by creating a file named `eks.py` in your root directory with the following specification:
+```python
 from kubernetes import client, config
 
 config.load_kube_config()
