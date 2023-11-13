@@ -7,7 +7,7 @@
 </p>
 Welcome to the complete Cloud Native Resource Monitoring application. This Python application built with Flask can monitor the CPU and Memory utilization in real time. This project embraces containerisation using Docker and orchestration using Kubernetes ensuring ease of deployment and scalability.
 
-## 🚀 Prerequisites
+## ⚙️ Prerequisites
 - Flask >= 2.2.3
 - psutil >= 5.8.0
 - kubectl >= 1.28
